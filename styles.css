@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff; /* White Background */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #ffffff; /* White Background */
+    border-bottom: 2px solid #3364ff; /* Optional: Adds a blue underline */
+}
+
+/* Logo and Name */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.company-name {
+    color: #3364ff; /* Deep Blue */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: auto; /* Push links to the right */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #3364ff; /* Deep Blue Text */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    color: #2244cc; /* Slightly darker blue on hover */
+}
+
+/* Header with Background Image */
+header {
+    background: url('Background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    height: 420px;
+}
+
+/* Hero Section - Move Text to Left & Make Bigger */
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 50px;
+    max-width: 30%;
+    margin-left: 5%;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin-top: 20px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        height: 80vh;
+        padding: 60px 15px;
+    }
+
+    .hero {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
