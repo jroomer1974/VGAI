@@ -78,18 +78,13 @@ header {
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    padding: 50px;
     max-width: 30%;
     margin-left: 5%;
-}
-
-.hero h1 {
-    font-size: 2.5em;
-    font-weight: bold;
+    text-shadow: 1px 1px 1px lightgray;
 }
 
 .hero p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: 10px;
 }
 
@@ -110,27 +105,6 @@ header {
     background-color: #ff6600;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        height: 80vh;
-        padding: 60px 15px;
-    }
-
-    .hero {
-        max-width: 90%;
-        margin-left: 5%;
-    }
-
-    .hero h1 {
-        font-size: 2.5em;
-    }
-
-    .hero p {
-        font-size: 1.2em;
-    }
-}
-
 /* Footer */
 footer {
     background: #222;
@@ -143,6 +117,7 @@ footer {
 .column-container {
     display: flex;
 }
+
 .column {
     flex: 1;
     padding: 20px;
@@ -159,4 +134,50 @@ footer {
 
 .text-center{
     text-align: center;
+}
+
+.projects {
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+
+    .hero p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .company-name {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 8px;
+    }
+
+    nav ul li a {
+        color: #3364ff; /* Deep Blue Text */
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .column {
+        flex: 1;
+        padding-bottom: 0;
+    }
+
+    .column-container {
+        flex-direction: column;
+    }
 }
